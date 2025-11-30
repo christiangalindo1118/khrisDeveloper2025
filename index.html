@@ -8,20 +8,62 @@
     <meta name="keywords" content="Unity Developer, Game Development, AR, VR, XR, C#, 3D Games" />
     <meta name="author" content="Christian Galindo" />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Christian Galindo - Unity Developer" />
+    <meta property="og:description" content="Game Developer specializing in 2D/3D, AR/VR immersive experiences" />
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Christian Galindo - Unity Developer" />
+    <meta name="twitter:description" content="Game Developer specializing in AR/VR" />
+
     <!-- Preconnect para optimizar carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+
+    <!-- CSS Crítico Inline -->
+    <style>
+        body{margin:0;background:#0d0d0d;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+        .hero{position:relative;height:85vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+        .skip-link{position:absolute;top:-40px;left:0;background:#8a2be2;color:#fff;padding:8px;z-index:9999}
+        .skip-link:focus{top:0}
+    </style>
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /></noscript>
 
     <title>Christian Galindo - Unity Developer | Game Development Portfolio</title>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Christian Galindo",
+            "jobTitle": "Unity Developer",
+            "description": "Video game developer specializing in 2D/3D, AR/VR, and XR experiences",
+            "url": "https://yourdomain.com",
+            "sameAs": [
+                "https://www.linkedin.com/in/cristian-jose-galindo-castañeda-unity-developer/",
+                "https://github.com/christiangalindo1118",
+                "https://khristhihan.itch.io/"
+            ],
+            "knowsAbout": ["Unity", "C#", "Game Development", "AR/VR", "XR Development"]
+        }
+    </script>
 </head>
 
 <body>
 
+<!-- Skip to content link -->
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <!-- HEADER -->
-<header>
+<header role="banner">
     <div class="container">
         <h1>CHRISTIAN GALINDO</h1>
         <nav aria-label="Main navigation">
@@ -38,15 +80,15 @@
 </header>
 
 <!-- MAIN -->
-<main>
+<main id="main" role="main">
 
     <!-- SECTION 1 - HERO -->
-    <section id="section1" class="hero">
-        <img class="hero-bg" src="Images/UnityWebDeveloper.jpg" alt="Unity Web Developer Background" loading="eager" />
+    <section id="section1" class="hero" aria-labelledby="hero-title">
+        <img class="hero-bg" src="Images/UnityWebDeveloper.jpg" alt="" role="presentation" loading="eager" />
 
         <div class="hero-content container">
             <div id="titlecontent">
-                <h2>Welcome to MarsLabs</h2>
+                <h2 id="hero-title">Welcome to MarsLabs</h2>
                 <p>
                     I am a video game developer with experience creating immersive and
                     high-impact interactive experiences. My work combines technical
@@ -62,9 +104,9 @@
     </section>
 
     <!-- SECTION 2 - VIDEOS -->
-    <section id="section2" class="content">
+    <section id="section2" class="content" aria-labelledby="videos-title">
         <div class="container">
-            <h2 data-aos="fade-up">2D / 3D / AR / VR / MR </h2>
+            <h2 id="videos-title" data-aos="fade-up">2D / 3D / AR / VR / MR</h2>
             <p data-aos="fade-up" data-aos-delay="150">
                 As a passionate video game programmer, I fuse creativity with advanced technical expertise to craft immersive, high-performance experiences. Skilled in Unity, I specialize in optimizing gameplay, integrating complex systems, and delivering seamless interactions that captivate players. My focus is on transforming ideas into polished, engaging worlds that push the boundaries of digital storytelling.
             </p>
@@ -73,8 +115,9 @@
                 <div class="video-responsive" data-aos="fade-up" data-aos-delay="100">
                     <iframe
                             src="https://www.youtube.com/embed/dFsB3Sx-gq8"
-                            title="Unity Game Demo 1"
+                            title="2D Game Development Showcase"
                             loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                     </iframe>
                 </div>
@@ -82,8 +125,9 @@
                 <div class="video-responsive" data-aos="fade-up" data-aos-delay="200">
                     <iframe
                             src="https://www.youtube.com/embed/1UVfq1T-rK4"
-                            title="Unity Game Demo 2"
+                            title="3D FPS Game Demo"
                             loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                     </iframe>
                 </div>
@@ -91,8 +135,9 @@
                 <div class="video-responsive" data-aos="fade-up" data-aos-delay="300">
                     <iframe
                             src="https://www.youtube.com/embed/sSfL1fVc8z4"
-                            title="Unity Game Demo 3"
+                            title="AR/VR Experience Demo"
                             loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                     </iframe>
                 </div>
@@ -100,8 +145,9 @@
                 <div class="video-responsive" data-aos="fade-up" data-aos-delay="400">
                     <iframe
                             src="https://www.youtube.com/embed/wYxxUZGYCZM"
-                            title="Unity Game Demo 4"
+                            title="Unity Gameplay Systems"
                             loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                     </iframe>
                 </div>
@@ -109,17 +155,19 @@
                 <div class="video-responsive" data-aos="fade-up" data-aos-delay="500">
                     <iframe
                             src="https://www.youtube.com/embed/hHgy1ViTfUg"
-                            title="Unity Game Demo 5"
+                            title="XR Development Showcase"
                             loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                     </iframe>
                 </div>
 
                 <div class="video-responsive" data-aos="fade-up" data-aos-delay="600">
                     <iframe
-                            src="https://www.youtube.com/embed/sSfL1fVc8z4"
-                            title="Unity Game Demo 6"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Mixed Reality Project"
                             loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                     </iframe>
                 </div>
@@ -128,15 +176,15 @@
     </section>
 
     <!-- SECTION 3 - PORTFOLIO -->
-    <section id="section3" class="content portfolio-section">
+    <section id="section3" class="content portfolio-section" aria-labelledby="portfolio-title">
         <div class="container">
-            <h2 data-aos="fade-up">Portfolio</h2>
+            <h2 id="portfolio-title" data-aos="fade-up">Portfolio</h2>
 
             <div class="gridywrap">
 
                 <!-- Proyecto 1: MarsLabs -->
-                <div class="gridy-1" data-aos="fade-up" data-aos-delay="100">
-                    <div class="gridimg" style="background-image: url('Images/MarsLabs.png')" role="img" aria-label="MarsLabs Project"></div>
+                <article class="gridy-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gridimg" style="background-image: url('Images/MarsLabs.png')" role="img" aria-label="MarsLabs XR Project Screenshot"></div>
                     <div class="gridinfo">
                         <h3>MarsLabs</h3>
                         <p class="gridexerpt">• Unity and Unreal Engine Development
@@ -150,11 +198,11 @@
                             • XR Performance Optimization
                             • AI Integration</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Proyecto 2: ProtoFPS3D -->
-                <div class="gridy-1" data-aos="fade-up" data-aos-delay="200">
-                    <div class="gridimg" style="background-image: url('Images/samuraimoon.png')" role="img" aria-label="ProtoFPS3D Project"></div>
+                <article class="gridy-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gridimg" style="background-image: url('Images/ProtoFPS.png')" role="img" aria-label="ProtoFPS3D Screenshot"></div>
                     <div class="gridinfo">
                         <h3>ProtoFPS3D</h3>
                         <p class="gridexerpt">• C# Scripting for FPS Mechanics
@@ -168,11 +216,11 @@
                             • 3D Performance Optimization
                             • Cross-Platform Deployment</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Proyecto 3: SAMURAI MOON -->
-                <div class="gridy-1" data-aos="fade-up" data-aos-delay="300">
-                    <div class="gridimg" style="background-image: url('Images/samuraimoon.png')" role="img" aria-label="Samurai Moon Project"></div>
+                <article class="gridy-1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gridimg" style="background-image: url('Images/samuraimoon.png')" role="img" aria-label="Samurai Moon 2D Game Screenshot"></div>
                     <div class="gridinfo">
                         <h3>SAMURAI MOON</h3>
                         <p class="gridexerpt">• C# Scripting for 2D Mechanics
@@ -186,29 +234,29 @@
                             • Cross-Platform Deployment
                             • Version Control (Git/GitHub)</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Proyecto 4: EVOLUTION CELL 2D -->
-                <div class="gridy-1" data-aos="fade-up" data-aos-delay="400">
-                    <div class="gridimg" style="background-image: url('Images/EvolutionCel.png')" role="img" aria-label="Evolution Cell 2D Project"></div>
+                <article class="gridy-1" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gridimg" style="background-image: url('Images/EvolutionCel.png')" role="img" aria-label="Evolution Cell 2D Game Screenshot"></div>
                     <div class="gridinfo">
                         <h3>EVOLUTION CELL 2D</h3>
-                        <p class="gridexerpt">• C# Scripting for 2D Mechanics
-                            • Sprite Design and Animation
-                            • Tilemap and Level Design
-                            • Physics and Collision Handling
-                            • UI/UX for 2D Games
-                            • Audio Integration
-                            • Game State Management
-                            • 2D Performance Optimization
-                            • Cross-Platform Deployment
-                            • Version Control (Git/GitHub)</p>
+                        <p class="gridexerpt">• Procedural Generation Systems
+                            • Cellular Automata AI
+                            • Particle System Effects
+                            • Resource Management Mechanics
+                            • Evolution-Based Gameplay
+                            • Dynamic Difficulty Scaling
+                            • Save/Load System
+                            • Mobile Touch Controls
+                            • Performance Profiling
+                            • Analytics Integration</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Proyecto 5: ZOMBIELAND -->
-                <div class="gridy-1" data-aos="fade-up" data-aos-delay="500">
-                    <div class="gridimg" style="background-image: url('Images/samuraimoon.png')" role="img" aria-label="Zombieland Project"></div>
+                <article class="gridy-1" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gridimg" style="background-image: url('Images/Zombieland.png')" role="img" aria-label="Zombieland Horror Game Screenshot"></div>
                     <div class="gridinfo">
                         <h3>ZOMBIELAND</h3>
                         <p class="gridexerpt">• C# Scripting for Third-Person Mechanics
@@ -222,11 +270,11 @@
                             • Optimization for Large 3D Environments
                             • Audio Design (Ambient, Dialogue, SFX)</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Proyecto 6: Eagle Survive -->
-                <div class="gridy-1" data-aos="fade-up" data-aos-delay="600">
-                    <div class="gridimg" style="background-image: url('Images/EagleSurviver.png')" role="img" aria-label="Eagle Survive Project"></div>
+                <article class="gridy-1" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gridimg" style="background-image: url('Images/EagleSurviver.png')" role="img" aria-label="Eagle Survive Flight Simulation Screenshot"></div>
                     <div class="gridinfo">
                         <h3>Eagle Survive</h3>
                         <p class="gridexerpt">• C# Scripting for Flight Mechanics
@@ -240,116 +288,116 @@
                             • Optimization for Open-World Performance
                             • Audio Design for Natural Atmosphere</p>
                     </div>
-                </div>
+                </article>
 
             </div>
         </div>
     </section>
 
     <!-- SECTION 4 - SKILLS -->
-    <section id="section4" class="content">
+    <section id="section4" class="content" aria-labelledby="skills-title">
         <div class="container">
-            <h2 data-aos="fade-up">Skills</h2>
+            <h2 id="skills-title" data-aos="fade-up">Skills</h2>
 
             <div class="skills-grid">
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="100">
                     <div class="progress-icon">
-                        <img src="Icons/c_sharp_icon_213045.png" alt="C# Programming Icon" loading="lazy" />
+                        <img src="Icons/c_sharp_icon_213045.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">C# Programming</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="80%">80%</div>
+                        <div class="progress" data-final="80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="150">
                     <div class="progress-icon">
-                        <img src="Icons/blender_102995.png" alt="Blender 3D Icon" loading="lazy" />
+                        <img src="Icons/blender_102995.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">Blender 3D</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="70%">70%</div>
+                        <div class="progress" data-final="70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="200">
                     <div class="progress-icon">
-                        <img src="Icons/Animation_icon-icons.com_54214.png" alt="Animation Icon" loading="lazy" />
+                        <img src="Icons/animation.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">Animation</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="70%">70%</div>
+                        <div class="progress" data-final="70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="250">
                     <div class="progress-icon">
-                        <img src="Icons/testing_icon-icons.com_72182.png" alt="Game Testing Icon" loading="lazy" />
+                        <img src="Icons/testing-game.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">Game Testing</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="80%">80%</div>
+                        <div class="progress" data-final="80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="300">
                     <div class="progress-icon">
-                        <img src="Icons/book-bookmark-icon_34486.png" alt="UI/UX Design Icon" loading="lazy" />
+                        <img src="Icons/ux.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">UI / UX</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="80%">80%</div>
+                        <div class="progress" data-final="80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="350">
                     <div class="progress-icon">
-                        <img src="Icons/artboard_123061.png" alt="Leadership Icon" loading="lazy" />
+                        <img src="Icons/artboard_123061.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">Leadership</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="90%">90%</div>
+                        <div class="progress" data-final="90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="400">
                     <div class="progress-icon">
-                        <img src="Icons/UnityIcon.png" alt="Unity Engine Icon" loading="lazy" />
+                        <img src="Icons/UnityIcon.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">Unity Engine</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="85%">85%</div>
+                        <div class="progress" data-final="85%" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="450">
                     <div class="progress-icon">
-                        <img src="Icons/ai-assistant.png" alt="AI Systems Icon" loading="lazy" />
+                        <img src="Icons/ai-assistant.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">AI Systems</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="60%">60%</div>
+                        <div class="progress" data-final="70%" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="500">
                     <div class="progress-icon">
-                        <img src="Icons/code.png" alt="Game Scripting Icon" loading="lazy" />
+                        <img src="Icons/code.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">Game Scripting</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="75%">75%</div>
+                        <div class="progress" data-final="75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                     </div>
                 </div>
 
                 <div class="progress-container" data-aos="zoom-in" data-aos-delay="550">
                     <div class="progress-icon">
-                        <img src="Icons/virtual-reality.png" alt="AR/VR Development Icon" loading="lazy" />
+                        <img src="Icons/virtual-reality.png" alt="" role="presentation" loading="lazy" width="60" height="60" />
                     </div>
                     <h3 class="skill-title">AR / VR Development</h3>
                     <div class="progress-bar-wrapper">
-                        <div class="progress" data-final="65%">65%</div>
+                        <div class="progress" data-final="85%" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
                     </div>
                 </div>
 
@@ -358,57 +406,66 @@
     </section>
 
     <!-- SECTION 6 - GENERATION -->
-    <section id="section6" class="content">
+    <section id="section6" class="content" aria-labelledby="generation-title">
         <div class="container">
-            <h2 data-aos="fade-up">Generation</h2>
+            <h2 id="generation-title" data-aos="fade-up">Generation Bootcamp</h2>
             <p data-aos="fade-up" data-aos-delay="100">
                 When I joined the Generation bootcamp, I stepped into a world of intensity and discovery. The days were long, the pace was relentless, and every challenge demanded resilience and focus. Yet within that pressure, opportunities unfolded—moments to collaborate with teammates, to experiment with ideas, and to bring them to life during three thrilling game jams. Together we designed, coded, and integrated video games that pushed our creativity to the limit. The greatest reward wasn't just the skills I gained, but the realization that with determination and teamwork, even the most ambitious dreams can be transformed into reality.
             </p>
 
-            <div class="gallery" data-aos="zoom-in">
+            <div class="gallery" data-aos="zoom-in" aria-label="Generation bootcamp project gallery">
                 <div class="box">
-                    <span style="--i:1"><img src="Images/logoGAMEJAM1.png" alt="Game Jam 1 Logo" loading="lazy" /></span>
-                    <span style="--i:2"><img src="Images/samuraimoon.png" alt="Samurai Moon" loading="lazy" /></span>
-                    <span style="--i:3"><img src="Images/logogeneration.png" alt="Generation Logo" loading="lazy" /></span>
-                    <span style="--i:4"><img src="Images/UnityWebDeveloper.jpg" alt="Unity Development" loading="lazy" /></span>
-                    <span style="--i:5"><img src="Images/EvolutionCel.png" alt="Evolution Cell" loading="lazy" /></span>
-                    <span style="--i:6"><img src="Images/logogamejam3.png" alt="Game Jam 3 Logo" loading="lazy" /></span>
-                    <span style="--i:7"><img src="Images/LOGOgamejam2.png" alt="Game Jam 2 Logo" loading="lazy" /></span>
-                    <span style="--i:8"><img src="Images/descarga.png" alt="Project Showcase" loading="lazy" /></span>
+                    <span style="--i:1"><img src="Images/logoGAMEJAM1.png" alt="Game Jam 1 Logo" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:2"><img src="Images/samuraimoon.png" alt="Samurai Moon Game" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:3"><img src="Images/logogeneration.png" alt="Generation Bootcamp Logo" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:4"><img src="Images/UnityWebDeveloper.jpg" alt="Unity Development" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:5"><img src="Images/EvolutionCel.png" alt="Evolution Cell Game" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:6"><img src="Images/logogamejam3.png" alt="Game Jam 3 Logo" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:7"><img src="Images/LOGOgamejam2.png" alt="Game Jam 2 Logo" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:8"><img src="Images/descarga.png" alt="Project Showcase" loading="lazy" width="200" height="200" /></span>
                 </div>
             </div>
 
-            <div class="iframe-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="video-responsive">
-                    <iframe
-                            loading="lazy"
-                            src="https://www.canva.com/design/DAGR_Q5BPQs/f_Kn3Yt-2jlGXg0tijNYEQ/view"
-                            title="Generation Bootcamp Presentation"
-                            allowfullscreen>
-                    </iframe>
-                </div>
+            <div class="canva-preview">
+                <img src="Images/MarsLabs.png" alt="Canva Presentation Preview">
+                <a class="open-canva"
+                   href="https://portafoliochristiangalindo.my.canva.site/professional-in-customer-service-translating-their-needs-and-ideas-into-the-final-prototypes-anticipating-the-concepts-and-innovating-in-the-presentation-with-the-latest-technology"
+                   target="_blank">
+                    Open Presentation
+                </a>
             </div>
+
+        </div>
+
         </div>
     </section>
 
     <!-- SECTION 7 - CONTACT -->
-    <section id="section7" class="content">
+    <section id="section7" class="content" aria-labelledby="contact-title">
         <div class="container">
-            <h2 data-aos="fade-up">Contact Me</h2>
+            <h2 id="contact-title" data-aos="fade-up">Contact Me</h2>
 
             <div class="contact-wrapper">
-                <form action="#" method="POST" data-aos="fade-right">
-                    <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
-                    <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
-                    <textarea name="message" rows="5" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                <form action="#" method="POST" data-aos="fade-right" aria-label="Contact form">
+                    <label for="name" class="visually-hidden">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
+
+                    <label for="email" class="visually-hidden">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" />
+
+                    <label for="message" class="visually-hidden">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
                     <button type="submit">Send Message</button>
                 </form>
 
                 <div class="qr-code" data-aos="fade-left">
                     <img
                             src="https://api.qrserver.com/v1/create-qr-code/?data=https://github.com/christiangalindo1118&size=200x200"
-                            alt="QR Code linking to GitHub profile"
+                            alt="QR Code linking to Christian Galindo's GitHub profile"
                             loading="lazy"
+                            width="200"
+                            height="200"
                     />
                 </div>
             </div>
@@ -418,28 +475,45 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" role="contentinfo">
     <div class="container">
-        <ul class="footer-links">
-            <li><a href="https://www.linkedin.com/in/cristian-jose-galindo-casta%C3%B1eda-unity-developer/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a></li>
-            <li><a href="https://github.com/christiangalindo1118" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a></li>
-            <li><a href="https://khristhihan.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="Itch.io Profile">Itch.io</a></li>
-        </ul>
-        <p>&copy; 2025 Christian Galindo.</p>
+        <nav aria-label="Social media links">
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/cristian-jose-galindo-casta%C3%B1eda-unity-developer/" target="_blank" rel="noopener noreferrer" aria-label="Visit Christian's LinkedIn profile (opens in new tab)">LinkedIn</a></li>
+                <li><a href="https://github.com/christiangalindo1118" target="_blank" rel="noopener noreferrer" aria-label="Visit Christian's GitHub profile (opens in new tab)">GitHub</a></li>
+                <li><a href="https://khristhihan.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit Christian's Itch.io profile (opens in new tab)">Itch.io</a></li>
+            </ul>
+        </nav>
+        <p>&copy; <time datetime="2025">2026</time> Christian Galindo.
+        </p>
     </div>
 </footer>
 
 <!-- Scripts -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="js/index.js" defer></script>
 <script>
-    AOS.init({
-        duration: 900,
-        once: true,
-        easing: "ease-out-cubic",
-        offset: 50
+    // Initialize AOS with better settings
+    window.addEventListener('load', () => {
+        AOS.init({
+            duration: 900,
+            once: true,
+            easing: "ease-out-cubic",
+            offset: 50,
+            disable: 'mobile' // Opcional: desactivar en mobile para mejor performance
+        });
+    });
+
+    // Fix for iOS vh units
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 </script>
 
 </body>
 </html>
+

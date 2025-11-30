@@ -786,20 +786,65 @@ SECTION 4 — SKILLS (10 ITEMS GRID)
 SECTION 6 — CAROUSEL
 ================================
 */
+/* 
+================================
+SECTION 6 — GENERATION BOOTCAMP
+================================
+*/
+
 #section6 {
+    position: relative;
     padding: var(--spacing-xl) 0;
+    text-align: center;
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+/* Background con blur igual que section1–3 */
+#section6::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("Images/UnityWebDeveloper.jpg") center/cover no-repeat;
+    filter: blur(6px) brightness(0.35);
+    z-index: 1;
+}
+
+#section6::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            180deg,
+            rgba(138, 43, 226, 0.25),
+            rgba(0, 0, 0, 0.9)
+    );
+    z-index: 2;
 }
 
 #section6 .container {
+    position: relative;
+    z-index: 3;
     width: 100%;
     text-align: center;
+}
+
+#section6 h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 12px rgba(255, 0, 127, 0.7);
 }
 
 #section6 p {
     text-align: center;
     margin-inline: auto;
     max-width: 800px;
+    opacity: 0.95;
+    line-height: 1.8;
 }
+
+/* --------- CARROUSEL 3D --------- */
 
 .gallery {
     margin-top: var(--spacing-lg);
@@ -824,6 +869,7 @@ SECTION 6 — CAROUSEL
     transform-origin: center;
     transform-style: preserve-3d;
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+
     box-shadow: 0 0 15px var(--color-primary);
     transition: all var(--transition-slow);
     cursor: pointer;
@@ -833,7 +879,7 @@ SECTION 6 — CAROUSEL
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 @keyframes carouselRotate {
@@ -849,9 +895,72 @@ SECTION 6 — CAROUSEL
     box-shadow: 0 0 30px var(--color-secondary);
 }
 
-.iframe-container {
-    margin-top: var(--spacing-lg);
+/* ----------- CANVA PREVIEW CENTERED ----------- */
+
+/* CONTENEDOR PRINCIPAL */
+.canva-preview {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 3rem auto;       /* 🔥 Esto la centra horizontalmente */
+    padding: 2rem;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(138, 43, 226, 0.35);
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+            0 4px 15px rgba(138, 43, 226, 0.3),
+            inset 0 0 25px rgba(255, 0, 127, 0.1);
+
+    text-align: center;      /* 🔥 Esto centra el texto y los elementos internos */
 }
+
+/* IMAGEN CENTRADA */
+.canva-preview img {
+    width: 100%;
+    max-width: 540px;        /* 🔥 Para que no se expanda demasiado */
+    margin: 0 auto 1.5rem;   /* 🔥 Centrada horizontalmente */
+    display: block;          /* Necesario para que margin: auto funcione */
+
+    border-radius: 14px;
+
+    box-shadow:
+            0 0 20px rgba(138, 43, 226, 0.4),
+            0 0 35px rgba(255, 0, 127, 0.2);
+}
+
+/* BOTÓN CENTRADO */
+.open-canva {
+    display: inline-block;    /* Para el centrado correcto */
+    margin: 0 auto;           /* Centrado */
+    padding: 0.7rem 1.6rem;
+
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.open-canva:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 127, 0.5);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
 
 /* 
 ================================
@@ -860,10 +969,12 @@ SECTION 7 — CONTACT
 */
 #section7 {
     padding: var(--spacing-xl) 0;
+    text-align: center;
 }
 
 #section7.container {
-    width: 100%;
+    width: min(90%, 900px);
+    margin-inline: auto;
     text-align: center;
 }
 
@@ -1034,7 +1145,7 @@ FOOTER
     display: inline-block;
     padding: 0.5rem 1rem;
     transition: all var(--transition-fast);
-    color: var(--color-text);
+    color: var(--color-accent);
 }
 
 .footer-links li a:hover {
@@ -1045,7 +1156,29 @@ FOOTER
 .footer p {
     margin: 0;
     text-align: center;
+
+    /* ---- NUEVO ESTILO FUTURISTA ---- */
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #8a2be2, #ff007f, #8a2be2);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow:
+            0 0 10px rgba(138, 43, 226, 0.8),
+            0 0 20px rgba(255, 0, 127, 0.6),
+            0 0 30px rgba(138, 43, 226, 0.4);
+
+    animation: neonPulse 4s ease-in-out infinite;
 }
+
 
 /* Iconos sociales si los tienes */
 .footer-social {
