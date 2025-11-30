@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div id="score" style="background-color: black; color: #800080; text-align: left; padding: 10px; border-radius: 10px; position: fixed; top: 10px; left: 10px; z-index: 99;">
+        <p>
+            Score: <span id="scoreEl">0</span>
+        </p>
+        <p>
+            Highest: <span id="highestEl">0</span>
+        </p>
+    </div>
+    
+    
+
+    <!-- Game Over / Start Menu -->
+    <div id="modelEl" style="display: flex; justify-content: center; align-items: center; height: 100vh; background: rgba(0, 0, 0, 1); position: fixed; top: 0; left: 0; width: 100%; z-index: 100;">
+        <div style="text-align: center; background-color: black; padding: 20px; border-radius: 10px;">
+            <h1 id="bigScoreEl" style="color: #800080; font-size: 3em;">0</h1> <!-- Color púrpura para el puntaje -->
+            <p style="color: #800080; font-size: 16px;">POINTS</p> <!-- Color púrpura para el texto de puntos -->
+            <div>
+                <button id="startGameBtn" style="padding: 10px 20px; font-size: 16px; background-color: black; color: #800080; border: 2px solid #800080; border-radius: 5px; cursor: pointer; transition: box-shadow 0.3s ease;">START GAME</button>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        /* Efecto hover para el botón */
+        #startGameBtn:hover {
+            box-shadow: 0 0 20px #800080, 0 0 30px #800080; /* Añadir sombra de color púrpura */
+        }
+    </style>
+    
+
+
+    <canvas id="c"></canvas>
+
+</body>
+</html>
