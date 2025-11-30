@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Christian Galindo - Portfolio de Desarrollador de Videojuegos
 
 ¡Bienvenido al repositorio de mi portafolio personal! Este es un sitio web de una sola página diseñado para mostrar mis habilidades, proyectos y experiencia como desarrollador de videojuegos.
@@ -23,3 +24,7 @@ Este proyecto fue construido utilizando tecnologías web estándar:
 ## ⚙️ Despliegue
 
 El sitio está desplegado automáticamente en **GitHub Pages** utilizando GitHub Actions. Cada vez que se realiza un `push` a la rama `main`, el flujo de trabajo definido en `.github/workflows/static.yml` se encarga de publicar la versión más reciente.
+=======
+# khrisDeveloper2025
+Portfolio 2025 prototipe
+>>>>>>> 540192d8ff23bbebdc2e6ee0c6e37ae899a1aefd
