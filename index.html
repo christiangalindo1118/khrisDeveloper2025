@@ -32,9 +32,16 @@
         .skip-link:focus{top:0}
     </style>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /></noscript>
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AOS CSS (con carga optimizada) -->
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </noscript>
+
 
     <title>Christian Galindo - Unity Developer | Game Development Portfolio</title>
 
@@ -178,121 +185,160 @@
     <!-- SECTION 3 - PORTFOLIO -->
     <section id="section3" class="content portfolio-section" aria-labelledby="portfolio-title">
         <div class="container">
-            <h2 id="portfolio-title" data-aos="fade-up">Portfolio</h2>
 
+            <!-- =============================== -->
+            <!--  HEADER CENTRADO DE LA SECCIÓN -->
+            <!-- =============================== -->
+            <div class="section3-header" data-aos="fade-up">
+                <h2 id="portfolio-title">Portfolio</h2>
+
+                <img
+                        src="Images/VR.png"
+                        alt="Unity Web Developer Banner"
+                        class="section3-img"
+                        loading="lazy"
+                />
+
+                <p class="section3-description">
+                    A curated collection of my most advanced Unity and Unreal projects —
+                    focused on gameplay programming, AI, XR mechanics, shaders,
+                    performance optimization, and immersive prototypes.
+                </p>
+            </div>
+
+
+            <!-- =============================== -->
+            <!--           GRID DE PROYECTOS     -->
+            <!-- =============================== -->
             <div class="gridywrap">
 
-                <!-- Proyecto 1: MarsLabs -->
+                <!-- Proyecto 1 -->
                 <article class="gridy-1" data-aos="fade-up" data-aos-delay="100">
-                    <div class="gridimg" style="background-image: url('Images/MarsLabs.png')" role="img" aria-label="MarsLabs XR Project Screenshot"></div>
+                    <div class="gridimg"
+                         style="background-image: url('Images/VirtualReality3.jpg')"
+                         role="img" aria-label="MarsLabs XR Project Screenshot"></div>
+
                     <div class="gridinfo">
                         <h3>MarsLabs</h3>
-                        <p class="gridexerpt">• Unity and Unreal Engine Development
+                        <p class="gridexerpt">
+                            • Unity and Unreal Engine Development
                             • C# and C++ Programming
                             • Immersive UX/UI Design for XR
                             • 3D Modeling and Animation
-                            • XR Hardware Integration
                             • XR Networking and Multiplayer
                             • Data Processing and Analytics
-                            • Advanced Shaders and Visual Effects
-                            • XR Performance Optimization
-                            • AI Integration</p>
+                            • Advanced Shaders
+                            • XR Optimization
+                            • AI Integration
+                        </p>
                     </div>
                 </article>
 
-                <!-- Proyecto 2: ProtoFPS3D -->
+                <!-- Proyecto 2 -->
                 <article class="gridy-1" data-aos="fade-up" data-aos-delay="200">
-                    <div class="gridimg" style="background-image: url('Images/ProtoFPS.png')" role="img" aria-label="ProtoFPS3D Screenshot"></div>
+                    <div class="gridimg"
+                         style="background-image: url('Images/FpsProto1.png')"
+                         role="img" aria-label="ProtoFPS3D Screenshot"></div>
+
                     <div class="gridinfo">
                         <h3>ProtoFPS3D</h3>
-                        <p class="gridexerpt">• C# Scripting for FPS Mechanics
-                            • 3D Modeling and Environment Design
-                            • Character Controller and Camera Systems
-                            • Physics and Collision Handling
-                            • Weapon Systems and Shooting Mechanics
-                            • AI for Enemies and NPCs
-                            • Multiplayer Networking
-                            • Lighting, Shaders, and Visual Effects
-                            • 3D Performance Optimization
-                            • Cross-Platform Deployment</p>
+                        <p class="gridexerpt">
+                            • C# FPS Mechanics
+                            • 3D Environment Design
+                            • Weapon & Combat Systems
+                            • AI for Enemies
+                            • Camera Systems
+                            • Lighting & VFX
+                            • Multiplayer
+                            • Optimization
+                        </p>
                     </div>
                 </article>
 
-                <!-- Proyecto 3: SAMURAI MOON -->
+                <!-- Proyecto 3 -->
                 <article class="gridy-1" data-aos="fade-up" data-aos-delay="300">
-                    <div class="gridimg" style="background-image: url('Images/samuraimoon.png')" role="img" aria-label="Samurai Moon 2D Game Screenshot"></div>
+                    <div class="gridimg"
+                         style="background-image: url('Images/samuraimoon.png')"
+                         role="img" aria-label="Samurai Moon 2D Game Screenshot"></div>
+
                     <div class="gridinfo">
                         <h3>SAMURAI MOON</h3>
-                        <p class="gridexerpt">• C# Scripting for 2D Mechanics
-                            • Sprite Design and Animation
-                            • Tilemap and Level Design
-                            • Physics and Collision Handling
-                            • UI/UX for 2D Games
+                        <p class="gridexerpt">
+                            • 2D C# Gameplay
+                            • Tilemaps & Level Design
+                            • Sprite Animation
+                            • UI/UX
                             • Audio Integration
-                            • Game State Management
-                            • 2D Performance Optimization
-                            • Cross-Platform Deployment
-                            • Version Control (Git/GitHub)</p>
+                            • Game States
+                            • Optimization
+                        </p>
                     </div>
                 </article>
 
-                <!-- Proyecto 4: EVOLUTION CELL 2D -->
+                <!-- Proyecto 4 -->
                 <article class="gridy-1" data-aos="fade-up" data-aos-delay="400">
-                    <div class="gridimg" style="background-image: url('Images/EvolutionCel.png')" role="img" aria-label="Evolution Cell 2D Game Screenshot"></div>
+                    <div class="gridimg"
+                         style="background-image: url('Images/EvolutionCel.png')"
+                         role="img" aria-label="Evolution Cell 2D Game Screenshot"></div>
+
                     <div class="gridinfo">
                         <h3>EVOLUTION CELL 2D</h3>
-                        <p class="gridexerpt">• Procedural Generation Systems
-                            • Cellular Automata AI
-                            • Particle System Effects
-                            • Resource Management Mechanics
-                            • Evolution-Based Gameplay
-                            • Dynamic Difficulty Scaling
+                        <p class="gridexerpt">
+                            • Procedural Systems
+                            • Particle Effects
+                            • Dynamic Difficulty
+                            • Resource Mechanics
                             • Save/Load System
-                            • Mobile Touch Controls
-                            • Performance Profiling
-                            • Analytics Integration</p>
+                            • Mobile Controls
+                            • Optimization
+                        </p>
                     </div>
                 </article>
 
-                <!-- Proyecto 5: ZOMBIELAND -->
+                <!-- Proyecto 5 -->
                 <article class="gridy-1" data-aos="fade-up" data-aos-delay="500">
-                    <div class="gridimg" style="background-image: url('Images/Zombieland.png')" role="img" aria-label="Zombieland Horror Game Screenshot"></div>
+                    <div class="gridimg"
+                         style="background-image: url('Images/ZombieLand.png')"
+                         role="img" aria-label="Zombieland Horror Game Screenshot"></div>
+
                     <div class="gridinfo">
                         <h3>ZOMBIELAND</h3>
-                        <p class="gridexerpt">• C# Scripting for Third-Person Mechanics
-                            • 3D Character Controller and Camera Systems
-                            • Weapon Systems and Inventory Management
-                            • Enemy AI (Pathfinding, Behavior Trees, Combat)
-                            • Level Design and Environment Building
-                            • Lighting and Atmosphere for Horror
-                            • Animation Systems (Humanoids, Combat, Cutscenes)
-                            • Physics and Collision Handling
-                            • Optimization for Large 3D Environments
-                            • Audio Design (Ambient, Dialogue, SFX)</p>
+                        <p class="gridexerpt">
+                            • 3D TPS Mechanics
+                            • Enemy AI
+                            • Weapon & Inventory Systems
+                            • Cutscenes & Animations
+                            • Horror Lighting
+                            • Physics & Colliders
+                            • Optimization
+                        </p>
                     </div>
                 </article>
 
-                <!-- Proyecto 6: Eagle Survive -->
+                <!-- Proyecto 6 -->
                 <article class="gridy-1" data-aos="fade-up" data-aos-delay="600">
-                    <div class="gridimg" style="background-image: url('Images/EagleSurviver.png')" role="img" aria-label="Eagle Survive Flight Simulation Screenshot"></div>
+                    <div class="gridimg"
+                         style="background-image: url('Images/EagleSurviver.png')"
+                         role="img" aria-label="Eagle Survive Flight Simulation Screenshot"></div>
+
                     <div class="gridinfo">
                         <h3>Eagle Survive</h3>
-                        <p class="gridexerpt">• C# Scripting for Flight Mechanics
-                            • Physics-Based Movement and Collision
-                            • Procedural Environment Generation
-                            • AI for Predators and Prey
-                            • Animation Systems for Birds
-                            • Camera Systems for Aerial Perspective
-                            • Weather and Environmental Effects
-                            • Survival Mechanics Implementation
-                            • Optimization for Open-World Performance
-                            • Audio Design for Natural Atmosphere</p>
+                        <p class="gridexerpt">
+                            • Flight Physics
+                            • Procedural Terrain
+                            • Bird AI
+                            • Weather Effects
+                            • Camera Systems
+                            • Survival Mechanics
+                            • World Optimization
+                        </p>
                     </div>
                 </article>
 
             </div>
         </div>
     </section>
+
 
     <!-- SECTION 4 - SKILLS -->
     <section id="section4" class="content" aria-labelledby="skills-title">
@@ -415,13 +461,13 @@
 
             <div class="gallery" data-aos="zoom-in" aria-label="Generation bootcamp project gallery">
                 <div class="box">
-                    <span style="--i:1"><img src="Images/logoGAMEJAM1.png" alt="Game Jam 1 Logo" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:1"><img src="Images/VirtualReality4.jpg" alt="Game Jam 1 Logo" loading="lazy" width="200" height="200" /></span>
                     <span style="--i:2"><img src="Images/samuraimoon.png" alt="Samurai Moon Game" loading="lazy" width="200" height="200" /></span>
                     <span style="--i:3"><img src="Images/logogeneration.png" alt="Generation Bootcamp Logo" loading="lazy" width="200" height="200" /></span>
-                    <span style="--i:4"><img src="Images/UnityWebDeveloper.jpg" alt="Unity Development" loading="lazy" width="200" height="200" /></span>
-                    <span style="--i:5"><img src="Images/EvolutionCel.png" alt="Evolution Cell Game" loading="lazy" width="200" height="200" /></span>
-                    <span style="--i:6"><img src="Images/logogamejam3.png" alt="Game Jam 3 Logo" loading="lazy" width="200" height="200" /></span>
-                    <span style="--i:7"><img src="Images/LOGOgamejam2.png" alt="Game Jam 2 Logo" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:4"><img src="Images/khris1.jpg" alt="Unity Development" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:5"><img src="Images/LogoSena.png" alt="Evolution Cell Game" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:6"><img src="Images/VirtualReality5.jpg" alt="Game Jam 3 Logo" loading="lazy" width="200" height="200" /></span>
+                    <span style="--i:7"><img src="Images/VirtualReality1.jpg" alt="Game Jam 2 Logo" loading="lazy" width="200" height="200" /></span>
                     <span style="--i:8"><img src="Images/descarga.png" alt="Project Showcase" loading="lazy" width="200" height="200" /></span>
                 </div>
             </div>
@@ -484,14 +530,14 @@
                 <li><a href="https://khristhihan.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit Christian's Itch.io profile (opens in new tab)">Itch.io</a></li>
             </ul>
         </nav>
-        <p>&copy; <time datetime="2025">2026</time> Christian Galindo.
-        </p>
+        <p class="footer-copy">&copy; <time datetime="2025">2026</time> Christian Galindo.</p>
+
     </div>
 </footer>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-<script src="js/index.js" defer></script>
+<script src="assets/js/script.js" defer></script>
 <script>
     // Initialize AOS with better settings
     window.addEventListener('load', () => {
